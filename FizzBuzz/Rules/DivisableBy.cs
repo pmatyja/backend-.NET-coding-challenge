@@ -4,7 +4,7 @@ namespace FizzBuzz.Rules
 {
     public class DivisableBy : IRule
     {
-        public int MaxOutpuSize { get; }
+        public int MaxOutputSize { get; }
 
         private readonly string output;
         private readonly int divisableBy;
@@ -21,7 +21,7 @@ namespace FizzBuzz.Rules
                 throw new ArgumentException("Division by 0 will raise an exception", nameof(divisableBy));
             }
 
-            this.MaxOutpuSize = output.Length;
+            this.MaxOutputSize = output.Length;
             this.output = output;
             this.divisableBy = divisableBy;
         }

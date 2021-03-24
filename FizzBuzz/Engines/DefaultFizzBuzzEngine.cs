@@ -30,7 +30,7 @@ namespace FizzBuzz.Engines
 
         public void Run(int limit = 100)
         {
-            var builder = new StringBuilder(this.rules.Sum(x => x.MaxOutpuSize));
+            var builder = new StringBuilder(this.rules.Sum(x => x.MaxOutputSize));
 
             for (int i = 1; i <= limit; i++)
             {
